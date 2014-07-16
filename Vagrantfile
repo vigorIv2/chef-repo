@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 
   # This can be set to the host name you wish the guest machine to have. Vagrant
   # will automatically execute the configuration necessary to make this happen.
-  config.vm.hostname = "i7"
+  config.vm.hostname = "webserver"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -81,6 +81,6 @@ Vagrant.configure("2") do |config|
     chef.validation_client_name = "wse-validator"
     chef.validation_key_path = ".chef/wse-validator.pem"
     chef.provisioning_path = "/etc/chef"
-    chef.node_name = "mysql"
+    chef.node_name = "webdbserver"
   end
 end

@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+#cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+cookbook 'rvm',
+  :git => 'https://github.com/fnichol/chef-rvm'
+
+cookbook 'java',
+  :git => 'https://github.com/bryanwb/chef-java'
+
+cookbook 'haproxy',
+  :git => 'https://github.com/hw-cookbooks/haproxy'
+
+cookbook 'percona',
+  :git => 'https://github.com/phlipper/chef-percona'
+
+cookbook 'postgresql',
+  :git => 'https://github.com/findsyou/cookbooks',
+  :ref => 'postgresql-improvements'
+
+cookbook 'mysql',
+  :git => 'https://github.com/everm1nd/mysql'
+
+cookbook 'ohai',
+  :git => 'https://github.com/opscode-cookbooks/ohai'
+
+cookbook 'users',
+  :git => 'https://github.com/sethvargo-cookbooks/users'
+
+cookbook 'vim',
+  :git => 'https://github.com/opscode-cookbooks/vim'
+
+cookbook 'sudo',
+  :git => 'https://github.com/opscode-cookbooks/sudo'
+
+cookbook 'rsync',
+  :git => 'https://github.com/opscode-cookbooks/rsync'
+
+#cookbook 'git'
+#cookbook 'logwatch'
+
+cookbook 'hostname',
+  :git => 'https://github.com/nickola/chef-hostname'
+
+cookbook 'nginx'
+
+
